@@ -1,0 +1,136 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #4F8EF7;
+  --color-primary-light: #E8F0FE;
+  --color-primary-dark: #1a56db;
+
+  /* Background */
+  --bg-app: #F0F4F8;
+  --bg-header: #ffffff;
+  --bg-column: #F7F8FA;
+  --bg-card: #ffffff;
+  --bg-card-hover: #FAFBFF;
+
+  /* Text */
+  --text-primary: #1A1D2E;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --text-white: #ffffff;
+
+  /* Border */
+  --border-color: #E5E7EB;
+  --border-light: #F3F4F6;
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 14px;
+  --border-radius-xl: 20px;
+
+  /* Labels */
+  --label-feature-bg: #E8F5E9;
+  --label-feature-text: #2E7D32;
+  --label-feature-border: #4CAF50;
+
+  --label-bug-bg: #FFEBEE;
+  --label-bug-text: #C62828;
+  --label-bug-border: #F44336;
+
+  --label-issue-bg: #FFF3E0;
+  --label-issue-text: #E65100;
+  --label-issue-border: #FF9800;
+
+  --label-undefined-bg: #F5F5F5;
+  --label-undefined-text: #616161;
+  --label-undefined-border: #9E9E9E;
+
+  /* Column accent colors */
+  --col-todo: #4F8EF7;
+  --col-doing: #4CAF50;
+  --col-review: #FF9800;
+  --col-done: #9C27B0;
+  --col-rework: #F44336;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+  /* Priority */
+  --priority-low: #64B5F6;
+  --priority-medium: #FFB74D;
+  --priority-high: #EF5350;
+  --priority-critical: #9C27B0;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.35s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-app);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Ionic overrides */
+ion-content {
+  --background: var(--bg-app);
+}
+
+ion-toolbar {
+  --background: var(--bg-header);
+  --border-color: var(--border-color);
+  --color: var(--text-primary);
+}
+
+ion-modal {
+  --border-radius: var(--border-radius-xl);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
