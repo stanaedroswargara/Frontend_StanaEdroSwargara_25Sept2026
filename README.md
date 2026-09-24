@@ -76,7 +76,7 @@ Aplikasi Manajemen Tugas (Kanban Board) interaktif berbasis **Ionic React + Vite
 
 1. **Buka Terminal / Command Prompt** dan masuk ke direktori proyek:
    ```bash
-   cd "c:\Users\abtdev\Downloads\Home Test\kanban-board"
+   cd "HomeTestStana"
    ```
 
 2. **Install Dependensi**:
